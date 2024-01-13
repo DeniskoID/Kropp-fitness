@@ -1,33 +1,12 @@
-.btn {
-  border-radius: rem(15);
-  padding: rem(20) rem(44);
+.button {
+  display: inline-flex;
+  border-radius: var(--border-radius);
   font-weight: 700;
-  font-size: rem(16);
-  color: var(--white-color);
-  opacity: 1;
-
-  &:focus {
-    outline: none;
-    border: none;
-  }
+  line-height: 200%;
+  white-space: nowrap;
+  text-transform: uppercase;
 
   &:active {
     transform: translateY(4px);
   }
-
-  &--main-btn {
-    box-shadow: var(--green-shadow);
-    background-image: linear-gradient(88deg, #0041a4 3.4%, #00a386 65%);
-    background-size: 200% auto;
-    transition: all 0.3s ease;
-
-    @include hover {
-      background-position: right center;
-    }
-  }
-}
-
-.btn:focus-visible {
-  outline: 3px solid var(--blue);
-  outline-offset: 3px;
 }

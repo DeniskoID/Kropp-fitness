@@ -1,0 +1,40 @@
+.actions {
+  display: flex;
+  column-gap: rem(40);
+
+  &__button {
+    font-size: rem(12);
+    letter-spacing: 0.1em;
+    color: var(--black);
+    background-color: var(--accent-color);
+    padding-block: rem(7);
+    padding-inline: rem(26);
+
+    @include hover {
+      background-color: var(--grey-1);
+    }
+
+    @media (max-width: 760px) {
+      padding-inline: rem(17);
+    }
+  }
+
+  &__burger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border);
+    border-radius: 50%;
+    width: rem(40);
+    height: rem(40);
+
+    @include hover {
+      border-color: currentcolor;
+      color: var(--grey-1);
+    }
+  }
+
+  @media (max-width: 760px) {
+    column-gap: rem(15);
+  }
+}

@@ -1,0 +1,39 @@
+.navigation {
+  &__list {
+    display: flex;
+    column-gap: rem(50);
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      column-gap: rem(24);
+      justify-content: center;
+    }
+
+    @media (max-width: 360px) {
+      column-gap: rem(20);
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    column-gap: rem(7);
+    align-items: center;
+    font-weight: 700;
+    font-size: rem(12);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white);
+
+    @include hover {
+      color: var(--grey-1);
+    }
+  }
+
+  &__link--current::after {
+    content: "";
+    border-radius: 50%;
+    width: rem(5);
+    height: rem(5);
+    background-color: currentcolor;
+  }
+}

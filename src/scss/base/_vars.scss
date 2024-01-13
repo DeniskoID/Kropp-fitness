@@ -22,6 +22,7 @@
   --focus: var(--blue);
   --primary: var(--grey-4);
   --secondary: var(--black);
+  --accent-color: var(--white);
 
   --text: var(--grey-1);
   --title: var(--white);
@@ -37,6 +38,7 @@
 
   // Animations
   --transition-duration: 0.3s;
+  --transition-tf: ease-in-out;
 
   // Other
   --input-height: 3.375rem;

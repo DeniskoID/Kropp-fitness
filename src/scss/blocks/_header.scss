@@ -1,125 +1,32 @@
 .header {
-  position: fixed;
-  top: rem(35);
-  z-index: 10;
-  min-width: 100%;
-
-  &__container {
-    @media (max-width: 958px) {
-      padding: 0;
-    }
-  }
-
-  &__row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: rem(15);
-    padding: rem(22) clamp(1.25rem, -10.625rem + 20vw, 4.375rem);
-    background-color: rgb(255 255 255);
-    backdrop-filter: blur(20px);
-
-    @media (max-width: 958px) {
-      justify-content: flex-start;
-      border-radius: 0 0 rem(20) rem(20);
-      padding: rem(15);
-      box-shadow: 0 4px 10px 0 rgb(0 0 0 / 15%);
-    }
-  }
+  display: flex;
+  column-gap: rem(20);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: rem(26);
+  padding-inline: rem(32);
 
   &__logo {
-    transition: transform 0.3s ease-in-out;
-
-    @include hover {
-      transform: translateY(rem(2));
-    }
-
-    @media (max-width: 958px) {
-      margin-right: auto;
-      max-width: rem(80);
+    @media (max-width: 360px) {
+      width: rem(100);
     }
   }
 
   &__nav {
-    margin-right: rem(38);
-    margin-left: auto;
-
-    @media (max-width: 958px) {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -1;
-      display: grid;
-      grid-template-rows: 1fr min-content;
-      border-radius: 0 0 20px 20px;
-      padding-bottom: rem(20);
-      width: 100%;
-
-      // min-height: 80vh;
-      box-shadow: var(--gray-shadow);
-      background-color: var(--white-color);
+    @media (max-width: 1024px) {
+      flex-basis: 100%;
+      order: 1;
     }
   }
 
-  &__nav-links {
-    @media (max-width: 958px) {
-      place-self: center;
-      justify-items: center;
-      margin-top: clamp(3.75rem, 3.123rem + 3.13vw, 5rem);
-      margin-bottom: clamp(1.25rem, 0.623rem + 3.13vw, 2.5rem);
-    }
+  @media (max-width: 1024px) {
+    padding-block: rem(20);
+    padding-inline: rem(15);
+    row-gap: rem(20);
   }
 
-  &__phone {
-    display: flex;
-    column-gap: rem(10);
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-
-    @include hover {
-      .header__phone-icon {
-        transform: rotate(15deg);
-      }
-
-      .header__phone-number {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  &__phone-icon {
-    flex-shrink: 0;
-    width: rem(30);
-    height: rem(30);
-    transition: all 0.3s ease-in-out;
-
-    @media (max-width: 958px) {
-      display: none;
-      margin-right: rem(40);
-    }
-  }
-
-  &__phone-number {
-    font-weight: 700;
-    font-size: rem(18);
-    transition: all 0.3s ease-in-out;
-
-    @media (max-width: 958px) {
-      display: none;
-    }
-  }
-
-  &__social {
-    display: none;
-
-    @media (max-width: 958px) {
-      display: flex;
-      place-self: center;
-      justify-items: center;
-    }
-  }
-
-  @media (max-width: 958px) {
-    top: 0;
+  @media (max-width: 767px) {
+    padding-block-start: rem(10);
   }
 }

@@ -17,6 +17,7 @@
 }
 
 img {
+  display: block;
   height: auto;
   max-width: 100%;
   object-fit: cover;
@@ -36,11 +37,14 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-.btn-reset {
+button:focus {
+  outline: none;
   border: none;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
 }
 
 .list-reset {
@@ -63,6 +67,7 @@ input,
 textarea,
 svg * {
   transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-tf);
 }
 
 svg * {
