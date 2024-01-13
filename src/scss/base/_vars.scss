@@ -1,0 +1,43 @@
+/* stylelint-disable custom-property-empty-line-before */
+:root {
+  --container-width: 1340px;
+  --container-padding: 15px;
+
+  // Fonts
+  --font-main: "Heebo", sans-serif;
+  --font-accent: "Yantramanav", sans-serif;
+
+  // Colors
+  --white: #fff;
+  --black: #000;
+  --red: #f03d3e;
+  --blue: #0c38d8;
+  --grey-1: #c4c4c4;
+  --grey-2: #707070;
+  --grey-3: #404040;
+  --grey-4: #131619;
+
+  --error: var(--red);
+  --success: var(--blue);
+  --focus: var(--blue);
+  --primary: var(--grey-4);
+  --secondary: var(--black);
+
+  --text: var(--grey-1);
+  --title: var(--white);
+
+  // Borders
+  --border-radius: 1.875rem;
+  --border: 1px solid var(--white);
+
+  // Sizes
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+
+  // Animations
+  --transition-duration: 0.3s;
+
+  // Other
+  --input-height: 3.375rem;
+}
