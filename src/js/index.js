@@ -1,3 +1,5 @@
+import slider from './modules/hero-slider';
+slider.mount();
 // import lenis from './vendor/lenis.js';
 // lenis.start();
 
