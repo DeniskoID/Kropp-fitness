@@ -1,6 +1,8 @@
 .actions {
+  --c-gap: clamp(1rem, 0.017rem + 2.07vw, 2.5rem);
+
   display: flex;
-  column-gap: rem(40);
+  column-gap: var(--c-gap);
 
   &__button {
     font-size: rem(12);
@@ -32,9 +34,5 @@
       border-color: currentcolor;
       color: var(--grey-1);
     }
-  }
-
-  @media (max-width: 760px) {
-    column-gap: rem(15);
   }
 }

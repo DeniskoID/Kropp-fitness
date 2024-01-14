@@ -1,16 +1,18 @@
 .navigation {
   &__list {
+    --c-gap: clamp(1.25rem, 0.875rem + 1.88vw, 3.125rem);
+
     display: flex;
-    column-gap: rem(50);
+    column-gap: var(--c-gap);
     flex-wrap: wrap;
 
     @media (max-width: 767px) {
-      column-gap: rem(24);
+      // column-gap: rem(24);
       justify-content: center;
     }
 
     @media (max-width: 360px) {
-      column-gap: rem(20);
+      // column-gap: rem(20);
     }
   }
 
