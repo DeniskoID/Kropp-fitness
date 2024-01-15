@@ -1,0 +1,72 @@
+.motivation {
+  &__item {
+    &:nth-child(even) {
+      background-color: var(--primary);
+
+      .motivation__card {
+        flex-direction: row-reverse;
+
+        @media (max-width: 767px) {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+
+  &__card {
+    --cg: clamp(1.875rem, -0.25rem + 10.63vw, 12.5rem);
+
+    display: flex;
+    column-gap: var(--cg);
+    align-items: center;
+    justify-content: start;
+
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+
+    @media (max-width: 1024px) {
+      padding-block: rem(100);
+    }
+  }
+
+  &__card-body {
+    padding-left: rem(35);
+  }
+
+  &__card-title {
+    &:not(:last-child) {
+      margin-bottom: rem(14);
+    }
+
+    @media (max-width: 1024px) {
+      max-width: clamp(15.938rem, 6.136rem + 49.01vw, 37.5rem);
+    }
+  }
+
+  &__card-descr {
+    max-width: rem(400);
+
+    &:not(:last-child) {
+      margin-bottom: rem(36);
+    }
+  }
+
+  &__card-image {
+    margin-block: rem(-60);
+
+    @media (max-width: 1919px) {
+      margin-block: rem(-20);
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 30%;
+      margin-block: unset;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 80%;
+      margin-block: 0 rem(50);
+    }
+  }
+}

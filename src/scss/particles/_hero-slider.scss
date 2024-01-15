@@ -3,15 +3,15 @@
   color: var(--white);
 
   &__slide {
-    --pt: ;
-    --pb: clamp(3.125rem, 2.15rem + 4.88vw, 8rem);
+    --pb: clamp(3.125rem, 2.727rem + 1.99vw, 4rem);
 
     display: flex;
     flex-direction: column;
     justify-content: end;
     overflow: hidden;
-    height: 100dvh;
-    min-height: 100vh;
+    min-height: 100svh;
+
+    // min-height: 100vh;
     text-transform: uppercase;
     padding-block-end: var(--pb);
     padding-inline: clamp(0.938rem, 0.075rem + 4.31vw, 5.25rem);

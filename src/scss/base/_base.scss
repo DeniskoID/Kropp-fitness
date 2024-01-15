@@ -37,6 +37,11 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+/* stylelint-disable-next-line selector-not-notation */
+p:not([class]):not(:last-child) {
+  margin-bottom: rem(24);
+}
+
 button:focus {
   outline: none;
   border: none;

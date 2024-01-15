@@ -9,7 +9,7 @@
     letter-spacing: 0.1em;
     color: var(--black);
     background-color: var(--accent-color);
-    padding-block: rem(7);
+    padding-block: rem(8) rem(6);
     padding-inline: rem(26);
 
     @include hover {
