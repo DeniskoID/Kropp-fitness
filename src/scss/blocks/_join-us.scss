@@ -85,9 +85,6 @@
     }
   }
 
-  &__form {
-  }
-
   &__form-header {
     display: flex;
     flex-direction: column;
@@ -97,9 +94,6 @@
     &:not(:last-child) {
       margin-bottom: rem(52);
     }
-  }
-
-  &__form-title {
   }
 
   &__form-subtitle {
@@ -126,8 +120,5 @@
 
   &__form-input {
     max-width: rem(400);
-  }
-
-  &__form-button {
   }
 }
