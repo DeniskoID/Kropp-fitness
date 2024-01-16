@@ -1,0 +1,51 @@
+.trainings {
+  position: relative;
+  max-width: 1920px;
+  background-color: var(--secondary);
+  margin-inline: auto;
+  padding-block: rem(70) rem(120);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: rem(60);
+
+    @media (max-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(30);
+    }
+  }
+
+  &__item {
+    --bg-size: 83px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--bg-size);
+    background: url("../img/icons/transparent-arrow-bottom-left.svg") 100% 0 / var(--bg-size) no-repeat;
+    row-gap: rem(32);
+
+    @media (max-width: 767px) {
+      --bg-size: 50px;
+
+      row-gap: rem(10);
+    }
+  }
+
+  &__image {
+    @media (max-width: 767px) {
+      max-width: rem(120);
+    }
+  }
+
+  &__item-title {
+    font-size: rem(16);
+    line-height: 128%;
+    letter-spacing: 0.05em;
+  }
+}
