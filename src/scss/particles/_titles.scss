@@ -1,4 +1,6 @@
-.title {
+.title,
+.title-medium,
+.title-big {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -7,11 +9,15 @@
 .title-medium {
   --fsz: clamp(1.25rem, 0.682rem + 2.84vw, 2.5rem);
 
-  font-weight: 700;
   font-size: var(--fsz);
   line-height: 130%;
-  text-transform: uppercase;
-  color: var(--accent-color);
+}
+
+.title-big {
+  --fszb: clamp(1.563rem, 0.568rem + 4.97vw, 3.75rem);
+
+  font-size: var(--fszb);
+  line-height: 120%;
 }
 
 .backdrop-title {
@@ -42,4 +48,10 @@
     text-stroke: 1px var(--grey-3);
     color: transparent;
   }
+}
+
+.backdrop-title-centered::after {
+  left: 50%;
+  top: -0.02em;
+  translate: -50% 0;
 }

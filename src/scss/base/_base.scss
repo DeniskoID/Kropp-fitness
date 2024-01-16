@@ -42,12 +42,14 @@ p:not([class]):not(:last-child) {
   margin-bottom: rem(24);
 }
 
-button:focus {
+button:focus,
+input:focus {
   outline: none;
   border: none;
 }
 
-button:focus-visible {
+button:focus-visible,
+input:focus-visible {
   outline: 3px solid var(--blue);
   outline-offset: 3px;
 }

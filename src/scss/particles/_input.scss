@@ -1,0 +1,16 @@
+.input {
+  border: 1px solid var(--grey-3);
+  border-radius: rem(30);
+  width: 100%;
+  height: rem(54);
+  color: var(--accent-color);
+  padding-inline: rem(25);
+
+  ::placeholder {
+    color: var(--grey-1);
+  }
+
+  @include hover {
+    border-color: var(--accent-color);
+  }
+}
