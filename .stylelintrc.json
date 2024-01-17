@@ -462,7 +462,6 @@
       }
     ],
 
-    "at-rule-name-newline-after": null,
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "block-no-empty": [
@@ -528,7 +527,6 @@
       }
     ],
     "no-invalid-double-slash-comments": true,
-    "no-missing-end-of-source-newline": null,
     "no-unknown-animations": true,
     "number-max-precision": 5,
     "property-no-unknown": [
