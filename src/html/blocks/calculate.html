@@ -1,0 +1,79 @@
+<section class="calculate">
+    <div class="calculate__inner container">
+        <div class="calculate__body">
+            <h2 class="calculate__title title title-medium backdrop-title" data-title="Bmi">
+                Input your BMI
+            </h2>
+            <div class="calculate__description">
+                <p>
+                    Duo graece ponderum ne, ei mel aliquando. Pro te tamquam nonumes, nam no nemore epicurei
+                </p>
+            </div>
+            <form class="calculate__form">
+                <div class="calculate__form-body">
+                    <label for="height" class="visually-hidden">Height</label>
+                    <input id="height" class="calculate__input input" type="number" placeholder="Height / cm">
+
+                    <label for="weight" class="visually-hidden">Weight</label>
+                    <input id="weight" class="calculate__input input" type="number" placeholder="Weight / kg">
+
+                    <label for="age" class="visually-hidden">Age</label>
+                    <input id="age" class="calculate__input input" type="number" placeholder="Age">
+
+                    <label for="gender" class="visually-hidden">Gender</label>
+                    <select id="gender" class="calculate__input input" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="activity-factor" class="visually-hidden">Select an activity factor</label>
+                    <select id="activity-factor" class="calculate__input calculate__input--wide input" required>
+                        <option value="" disabled selected>Select an activity factor:</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button type="submit" class="calculate__form-button button main-button">
+                    Calculate
+                </button>
+            </form>
+        </div>
+        <div class="calculate__table-wrapper">
+            <table class="calculate__table">
+                <thead>
+                    <tr>
+                        <th>Bmi</th>
+                        <th>Weight status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Healthy</td>
+                    </tr>
+                    <tr>
+                        <td>25.0 - 29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr>
+                        <td class="partial-border">30.0 - and Above</td>
+                        <td>Obese</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <b>BMR</b> Metabolic Rate / <b>BMI</b> Body Mass Index
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>

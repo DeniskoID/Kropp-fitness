@@ -28,30 +28,24 @@ a {
   color: inherit;
 }
 
-a:focus {
+a,
+button:focus,
+input:focus,
+select:focus {
   outline: none;
 }
 
-a:focus-visible {
-  outline: 3px solid var(--focus);
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
 
 /* stylelint-disable-next-line selector-not-notation */
 p:not([class]):not(:last-child) {
   margin-bottom: rem(24);
-}
-
-button:focus,
-input:focus {
-  outline: none;
-  border: none;
-}
-
-button:focus-visible,
-input:focus-visible {
-  outline: 3px solid var(--blue);
-  outline-offset: 3px;
 }
 
 .list-reset {
@@ -79,4 +73,18 @@ svg * {
 
 svg * {
   transition-property: fill, stroke;
+}
+
+// Убираем стрелки выбора у инпутов с tyte="number"
+
+// Chrome, Safari, Edge, Opera
+.input[type="number"]::-webkit-outer-spin-button,
+.input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Firefox
+.input[type="number"] {
+  -moz-appearance: textfield;
 }

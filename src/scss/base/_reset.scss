@@ -97,6 +97,10 @@ legend {
   display: block;
 }
 
+b {
+  font-weight: 700;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition-duration: 0.01ms !important;
