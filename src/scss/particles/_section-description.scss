@@ -1,0 +1,8 @@
+.section-description {
+  --fszsub: clamp(1rem, 0.821rem + 0.89vw, 1.25rem);
+
+  font-size: var(--fszsub);
+  line-height: 165%;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
